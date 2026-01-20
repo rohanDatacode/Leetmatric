@@ -1,0 +1,123 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #111827;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* USER INPUT */
+.user-container {
+  margin-bottom: 2rem;
+}
+
+.user-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+.user-input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-input-container input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.user-input-container button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.user-input-container button:hover {
+  background: #0ea5e9;
+}
+
+/* STATS */
+.stats-container {
+  margin-top: 2rem;
+}
+
+/* PROGRESS */
+.progress {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.progress-item {
+  text-align: center;
+}
+
+/* CIRCLE */
+.circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: conic-gradient(
+  #299f5d var(--progress-degree, 0%),
+  #283a2e 0%
+);
+}
+
+
+
+/* STATS CARDS */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}

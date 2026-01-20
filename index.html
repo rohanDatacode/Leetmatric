@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeetMetric</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>LeetMetric</h1>
+      <p class="subtitle">Track your LeetCode progress instantly</p>
+    </header>
+
+    <!-- USER INPUT -->
+    <section class="user-container">
+      <label for="user-input">Enter your username</label>
+
+      <div class="user-input-container">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="e.g. rohan_verma"
+          autocomplete="off"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-container">
+
+      <!-- PROGRESS CIRCLES -->
+      <div class="progress">
+
+        <div class="progress-item">
+          <div class="circle easy-progress">
+            <span id="easy-label">0</span>
+          </div>
+          <p>Easy</p>
+        </div>
+
+        <div class="progress-item">
+          <div class="circle medium-progress">
+            <span id="medium-label">0</span>
+          </div>
+          <p>Medium</p>
+        </div>
+
+        <div class="progress-item">
+          <div class="circle hard-progress">
+            <span id="hard-label">0</span>
+          </div>
+          <p>Hard</p>
+        </div>
+
+      </div>
+
+      <!-- STATS CARDS -->
+      <div class="stats-cards">
+        <!-- Cards injected by JS -->
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
